@@ -58,7 +58,7 @@ jobs:
 
           # เปลี่ยน 'your-username/your-repo-name' เป็นชื่อของคุณ 
 
-          tags: your-username/your-repo-name:latest  
+          tags: phutawansub/webapp:latest  
 
  
 
@@ -86,10 +86,10 @@ jobs:
 
           script: | 
 
-            docker pull your-username/your-repo-name:latest 
+            docker pull phutawansub/webapp:latest 
 
             docker stop my-react-app || true 
 
             docker rm my-react-app || true 
 
-            docker run -d --name my-react-app -p 80:80 your-username/your-repo-name:latest
+            docker run -d --name my-react-app -p 80:80 phutawansub/webapp:latest
